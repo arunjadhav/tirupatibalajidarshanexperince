@@ -23,6 +23,11 @@
             margin: 0;
             padding: 20px;
             font-size: 1.25rem;
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
         }
 
         /* Default English Font (Handwriting) */
@@ -33,7 +38,7 @@
         /* Marathi Font - Kalam (Handwritten Devanagari Calligraphy) */
         #content-mr {
             font-family: 'Kalam', cursive;
-            font-size: 1.2rem; /* Adjusted slightly for comfortable reading in Kalam */
+            font-size: 1.15rem;
             line-height: 2.1;
         }
 
@@ -47,7 +52,8 @@
             border-radius: 4px;
             position: relative;
             background-image: linear-gradient(var(--line-color) 1px, transparent 1px);
-            background-size: 100% 40px;
+            background-size: 100% 38px;
+            overflow: hidden;
         }
 
         /* Red Margin Line on the Left */
@@ -69,6 +75,7 @@
             top: -15px;
             left: 50px;
             right: 50px;
+            pointer-events-none;
         }
 
         .spiral-ring {
@@ -111,7 +118,6 @@
             color: var(--accent-color);
         }
 
-        /* Override headers for Marathi to use Kalam smoothly */
         #content-mr h1, #content-mr h2 {
             font-family: 'Kalam', cursive;
             font-weight: 700;
@@ -122,6 +128,7 @@
             text-align: center;
             margin-bottom: 5px;
             text-shadow: 1px 1px 0px rgba(0,0,0,0.05);
+            word-wrap: break-word;
         }
 
         .subtitle {
@@ -138,11 +145,13 @@
             margin-bottom: 15px;
             border-bottom: 2px dashed #b0a892;
             padding-bottom: 5px;
+            word-wrap: break-word;
         }
 
         p {
             margin-bottom: 22px;
             text-align: justify;
+            word-wrap: break-word;
         }
 
         strong {
@@ -160,6 +169,7 @@
             box-shadow: 2px 4px 10px rgba(0,0,0,0.05);
             font-size: 1.2rem;
             position: relative;
+            word-wrap: break-word;
         }
 
         .tip-box::before {
@@ -194,18 +204,24 @@
 
         @media (max-width: 768px) {
             .notepad {
-                padding: 40px 20px 40px 35px;
-                margin: 10px;
+                padding: 40px 15px 40px 25px;
+                margin: 5px;
             }
             .notepad::before {
-                left: 25px;
+                left: 15px;
             }
             .lang-switcher {
                 top: 15px;
                 right: 15px;
             }
             h1 {
-                font-size: 2.4rem;
+                font-size: 2.2rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            body {
+                padding: 5px;
             }
         }
     </style>
@@ -229,4 +245,177 @@
             <div class="subtitle">From Pune Airport to Chennai Waves & The Sacred Hills of Tirupati</div>
 
             <h2>Chapter 1: The Grand Takeoff & The Missing Document Drama</h2>
+            <p>Our long-awaited family journey to Chennai, Tirupati, and beyond officially kicked off on Monday, 21st September. Everyone in the family was buzzing with excitement, which naturally meant we reached Pune Airport way earlier than needed—landing at the terminal by 4:45 PM for our evening flight!</p>
+            <p>As we pulled up, we were greeted by the majestic sight of the newly renovated Pune Airport. The entrance immediately sets a grand tone with an imposing statue of Chhatrapati Shivaji Maharaj and architectural elements inspired by Shaniwar Wada.</p>
+            <p>At the security entry gate, we pulled out our ID proofs to present to the CISF officer. That’s when the plot twist hit us—we had forgotten our little daughter Advika’s birth certificate! After a quick search, my wife Anuradha managed to pull up her hospital discharge summary on her phone. However, since birth certificates take time to process, the document officially read <strong>"Baby of Anuradha Jadhav"</strong> instead of Advika. After a short, polite session of convincing the officer that the toddler standing right in front of him was indeed our daughter, he smiled and let us through!</p>
+            <p>Next came the check-in counters. While my wife, our son Aaryan, and I had flown before, this trip was extra special—it was the very first flight experience for baby Advika, as well as my father-in-law Vijay Patil and my mother-in-law Sheela Patil! Watching the airline staff weigh our bags, tag them with stickers, and send them gliding down the conveyor belt was a completely new experience for them.</p>
+            <p>Once clear of security, we headed to Gate 5. We walked through the enclosed, air-conditioned boarding bridge directly connecting the terminal straight to the aircraft door. At the entrance, an attendant verified our boarding passes, and a cheerful air hostess greeted each of us with a warm smile. We settled into <strong>Seats 6A through 6E</strong>—an entire row reserved for our family on the IndiGo flight. As the engines roared to life, three generations of the Jadhav and Patil families sat side by side, ready to take to the skies!</p>
             
+            <div class="tip-box">
+                The new Pune Airport terminal (Terminal 2) features a dedicated multi-level parking lot called AeroMall, self-baggage drop kiosks, and expanded seating areas. If you are traveling with seniors or little kids, look out for the battery-operated golf carts available inside the terminal for easier movement. Always double-check child ID proofs before leaving home!
+            </div>
+
+            <h2>Chapter 2: The Divine Calling & The Great Ticket Quest</h2>
+            <p>If you had asked us a few weeks earlier, a trip to Tirupati wasn't even on our calendar! But as they say, you only visit Tirupati when Lord Venkateswara calls upon you (Balaji's Bulawa).</p>
+            <p>My brother-in-law and his extended family were planning a pilgrimage to Tirupati Balaji, and they kindly invited us to join them. Though we hadn't planned it, visiting Tirupati had been lingering in our hearts for the last 12 long years! Seeing everything align effortlessly, we felt it was truly Lord Balaji’s divine wish that our entire family embark on this sacred journey together.</p>
+            <p>Securing a Special Entry Darshan pass is an adventure in itself. TTD opens online bookings (₹300 pass) on a monthly basis around the 24th for dates three months in advance, and millions log in simultaneously. Despite the rush, luck was on our side, and we secured passes for four of us! However, my father-in-law and mother-in-law could not get the online tickets. Yet, their deep devotion and unconditional faith were unshakeable. They decided to join us anyway, completely content with going through the <strong>Slotted Sarva Darshan (SSD)</strong> or general free darshan line. Their true bhakti gave this trip a special spiritual energy.</p>
+
+            <div class="tip-box">
+                The Tirumala Tirupati Devasthanams (TTD) opens online bookings for Special Entry Darshan (₹300 pass) on a monthly basis. If you cannot get online passes in advance, TTD provides free Slotted Sarva Darshan (SSD) tokens at offline counters in Tirupati (like Vishnu Nivasam or Srinivasam Complex). Original Aadhaar cards are strictly required for every pilgrim to collect SSD tokens.
+            </div>
+
+            <h2>Chapter 3: Landing in Chennai & The Midnight Zomato Adventure</h2>
+            <p>Our IndiGo flight to Chennai was smooth, though little Advika had her own agenda—she insisted on standing up and peeking out the window nearly the entire way! Upon landing, we boarded an airport shuttle bus to collect our luggage, booked two cabs, and headed straight to <strong>Hotel Greens Venue</strong>. We intentionally booked it near the railway station to make our upcoming train journey seamless.</p>
+            <p>By the time we reached, it was late, and we discovered the hotel had no restaurant or room service. Undeterred, Anu ordered food from <strong>Dundiamal Restaurant</strong> via Zomato. She accidentally entered a slightly incorrect delivery address, but the delivery partner was a rockstar—he called us, delivered the food with zero complaints, and charged a mere ₹80 delivery fee! We finally sat down for a delicious midnight dinner around 12:00 AM, wiped away our travel fatigue, and hit the sack around 1:30 AM.</p>
+
+            <div class="tip-box">
+                Staying near Chennai Central Railway Station is a great strategy if your itinerary involves catching an early morning train or heading to Tirupati via the Vande Bharat Express, as it cuts down city traffic transit time drastically.
+            </div>
+
+            <h2>Chapter 4: Fort Museum Discoveries & A Nostalgic Banana Leaf Feast</h2>
+            <p>With our late bedtime, morning fatigue caught up with us. Since Chennai temples close between 12:30 PM and 4:00 PM, we skipped our initial temple plan and pivoted straight to <strong>Fort St. George and its historic Museum</strong>, which spans three floors of colonial history, old coins, weapons, and paintings.</p>
+            <p>Hunger struck next, so I took the family to <strong>Amaravathi Restaurant</strong>, reviving fond memories from my 2014 trip. They served a magnificent traditional meal on a <strong>fresh banana leaf</strong>, and we wrapped it up by trying South Indian <strong>Goli Soda</strong> (marble-cork soda) for the very first time!</p>
+
+            <div class="tip-box">
+                Fort St. George is India’s first English fortress, built in 1640. The Fort Museum inside is spread across three floors: Ground Floor (weapons, armor, old coins), First Floor (British gubernatorial portraits and documents), and Second Floor (textiles, silver, and personal artifacts).
+            </div>
+
+            <h2>Chapter 5: The Marina Beach Split-Up, The 20-Minute Shore Walk & Waves of Joy</h2>
+            <p>In the evening, we headed to <strong>Marina Beach</strong> to fulfill a promise to Aaryan. However, we made a classic tourist mistake: we started late! Compounding the confusion, Anu and my mother-in-law took one auto-rickshaw to the Lighthouse area, while Aaryan, my father-in-law, and I took another and stopped near the Karunanidhi Memorial to explore the flea market.</p>
+            <p>Realizing we were far apart, I pulled up Anu’s live location on my phone. Grabbing Aaryan's hand, we walked along the sandy stretch in the dark for 20 minutes, following the live map until we reunited!</p>
+            <p>Little Advika and her Aaju stayed back near the shore hawkers checking out toys and trinkets, while Aaryan and I headed straight into the surf. He got completely drenched—and true to classic parenting oversights, we had forgotten to pack a change of clothes! After drying off, we had a comforting dinner at Amaravathi Restaurant and promised Aaryan a return beach trip.</p>
+
+            <div class="tip-box">
+                Marina Beach is the second-longest urban beach in the world (stretching over 6 kilometers). Because it is so vast and its landmarks (memorials and Lighthouse) are spaced far apart, always pin a specific meeting point or share live locations instantly if your group splits up across different vehicles.
+            </div>
+
+            <h2>Chapter 6: The Tavera Ride, Dino Surprises & The Living Heritage of Mahabalipuram</h2>
+            <p>The next morning at 9:30 AM, we set off for <strong>Mahabalipuram</strong>. Finding an Ertiga unavailable, we secured a spacious <strong>Chevrolet Tavera</strong> for ₹4,500. En route, we enjoyed a delicious breakfast at <strong>Anand Bhavan</strong> and cruised down Chennai’s stunning <strong>East Coast Road (ECR)</strong>.</p>
+            <p>Our first stop was a multi-thematic museum complex. To our absolute surprise, toddler Advika recognized and excitedly pointed out the dinosaur models at the Dino Museum!</p>
+            <p>As we traveled toward the archaeological sites, something remarkable caught my eye along the roadside: countless stone artisans carving gods, goddesses, animals, and pillars out of massive raw stones. Though modern machines assist them today, looking at their hands gave me a profound realization: these artisans are the living descendants (<strong>vanshaj</strong>) of the master sculptors who carved the ancient stone temples centuries ago.</p>
+            <p>We then explored the monolithic *Rathas*, the Shore Temple, and the breezy coastline. Aaryan had a blast and got soaked again, but roadside flea markets saved the day with fresh clothes. After a quick visit to <strong>Krishna's Butter Ball</strong>, we indulged in a fantastic seafood fish lunch recommended by our driver before heading back to Chennai.</p>
+
+            <h2>Chapter 7: Mylapore Shopping & A Close Call at Marina Beach</h2>
+            <p>Back in Chennai, my wife and mother-in-law went shopping at the bustling <strong>Mylapore Market</strong>. Meanwhile, Aaryan and I made a detour to <strong>Marina Beach</strong> for one final encounter with the sea. Aaryan refused to leave the crashing waves, ignoring all my calls. Just as I wondered what to do, two local policemen on beach patrol blew their whistles sharply—that authoritative sound instantly did the trick, and Aaryan came running back!</p>
+            <p>We packed our bags, rested up, and prepared for the early morning train.</p>
+
+            <h2>Chapter 8: The Vande Bharat Delay & The Blessings in Disguise</h2>
+            <p>Catching a 5:30 AM train is never easy, especially since little Advika wasn't feeling well with a bout of diarrhea and desperately needed sleep. But divine intervention stepped in: Anu received an early morning alert that our Vande Bharat train from Chennai to Renigunta was delayed by 1:30 hours!</p>
+            <p>We let the kids sleep a bit longer, then headed to <strong>Chennai Central Railway Station</strong>—which genuinely impressed us as an exceptionally clean, well-maintained, and modern station with ground-floor accessible platforms and nice AC lounges. We split up for the commute and boarded the smooth Vande Bharat train to Renigunta.</p>
+
+            <h2>Chapter 9: Settling into Madhav Complex & The Srinivasam Connection</h2>
+            <p>Arriving in Renigunta, a local cab dropped us off at <strong>Madhav Complex</strong>. Right beside it is <strong>Srinivasam Complex (Srinivasam Mandapam)</strong>, a vital pilgrim hub where you can confirm rooms, collect SSD tokens, and get subsidized meals. Our room was spacious with a big balcony.</p>
+            <p>Since my in-laws didn't have online passes, they planned to get offline SSD tokens at Srinivasam. However, learning that the Sarva Darshan rush was very low that day, they decided to head straight up to Tirumala by bus for darshan! Frequent government buses run round-the-clock (keeping in mind vehicular traffic down the hill is restricted between 12:00 AM and 4:00 AM). They had an incredible journey, completing darshan within 12 hours and returning safely early the next morning.</p>
+            <p>Meanwhile, Anu and I enjoyed the free meal prasad at Srinivasam Mandapam around 4:00 PM. Thanks to Balaji’s grace, they had miraculously reserved one last plate specifically for Anu! Anu even took a quick catnap on the floor, making it feel wonderfully homely.</p>
+
+            <h2>Chapter 10: Ascending to Tirumala & The 3-Hour Darshan Queue</h2>
+            <p>The next day at 12:30 PM, we checked out and hired a taxi up the ghat road (after a security check at the toll gate). After a quick Thali lunch in Tirumala, we joined the <strong>₹300 Special Entry Darshan</strong> queue.</p>
+            <p>Authorities strictly require a printed <strong>hard copy</strong> of your pass, which we quickly ran out to print at a nearby shop! It took us 3 hours of steady walking to reach the mobile storage point, followed by 2 hours in the waiting bays where TTD kindly provided food and milk packets. Finally, as we stepped into the sanctum chanting *"Venkatramana Govinda, Govinda"*, we caught our first breathtaking glimpse of Lord Balaji. Twelve years of waiting melted away in a single second. Anuradha was moved to tears of pure joy. After collecting our phones and Laddu Prasadam, we headed back down to Madhav Complex.</p>
+
+            <h2>Chapter 11: Srinivasam Rest & The Grand Temple Tour</h2>
+            <p>The following day, we shifted to Srinivasam Mandapam, which provides excellent dormitory facilities with clean bedsheets, blankets, and pillows for resting pilgrims. After refreshing ourselves, we visited two magnificent temples:</p>
+            <p>1. <strong>Sri Padmavathi Ammavari Temple (Tiruchanur):</strong> Seeking blessings from Lord Balaji's divine consort.<br>
+            2. <strong>Sri Govindaraja Swamy Temple (Tirupati):</strong> One of the oldest complexes dedicated to Lord Balaji's elder brother, depicted resting after calculating temple wealth!</p>
+
+            <h2>Chapter 12: The Journey Home via Kolhapur & Mahalaxmi's Blessings</h2>
+            <p>After enjoying a hearty dinner at <strong>Laturkar Restaurant</strong>, we boarded the <strong>Haripriya Express</strong> from Renigunta toward Kolhapur. Upon reaching Kolhapur, we sought the blessings of <strong>Karvir Nivasini Amba Bai (Mahalaxmi Temple)</strong>. The very next day, we boarded the Vande Bharat Express from Kolhapur back to Pune.</p>
+            <p>From airport dramas and Marina Beach waves to the living heritage of Mahabalipuram and the divine aura of Tirupati and Kolhapur, this family pilgrimage was truly magical. Our hearts are so full, and we are already eagerly looking forward to our next visit to Lord Balaji!</p>
+        </div>
+
+
+        <!-- ================= MARATHI CONTENT ================= -->
+        <div id="content-mr" class="lang-mr">
+            <h1>आमची दैवी यात्रा</h1>
+            <div class="subtitle">पुणे विमानतळापासून मरिना बीचच्या लाटांपर्यंत आणि तिरुपतीच्या पवित्र शिखरांपर्यंत</div>
+
+            <h2>भाग १: प्रवासाचा उत्साह आणि 'त्या' एका कागदपत्राचा ड्रामा!</h2>
+            <p>चेन्नई, तिरुपती आणि पुढील प्रवासाची आमची ही सहल सोमवार, २१ सप्टेंबर रोजी सुरू झाली. कुटुंबातील प्रत्येकाचा उत्साह ओसंडून वाहत होता, त्यामुळे संध्याकाळच्या विमानासाठी आम्ही दुपारी ४:४५ वाजताच पुणे विमानतळावर पोहोचलो!</p>
+            <p>पुणे विमानतळाच्या नवीन टर्मिनलवर प्रवेश करतानाच छत्रपती शिवाजी महाराजांचा भव्य पुतळा आणि सुंदर वास्तुकलेने सर्वांचे मन जिंकले. सुरक्षा तपासणीच्या वेळी मात्र एक छोटासा प्रसंग घडला—आम्ही लहानग्या अद्विकाचे जन्मप्रमाणपत्र घरीच विसरलो होतो! माझ्या पत्नीने फोनवर डिस्चार्ज समरी दाखवली, ज्यावर <strong>"Baby of Anuradha Jadhav"</strong> असे लिहिले होते. रक्षकांना ती आमचीच मुलगी आहे हे पटवून दिल्यावर त्यांनी आम्हाला आत सोडले!</p>
+            <p>आमची सहल विशेष होती कारण माझी मुलगी अद्विका, सासरे विजय पाटील आणि सासूबाई शीला पाटील यांच्यासाठी हा आयुष्यातील पहिलाच विमानप्रवास होता. विमानात जाताना कव्हर केलेल्या बोगद्यातून (Aero-bridge) चालत जात, एअर होस्टेसच्या हसऱ्या स्वागताने आम्ही <strong>सीट ६A ते ६E</strong> वर आपली जागा घेतली आणि आमचे विमान आकाशात झेपावले!</p>
+
+            <div class="tip-box">
+                पुणे विमानतळाच्या नवीन टर्मिनलवर पार्किंगसाठी 'एरोमॉल' आणि ज्येष्ठ नागरिकांसाठी गोल्फ गाड्यांची सोय आहे. प्रवासापूर्वी मुलांची कागदपत्रे नक्की तपासा!
+            </div>
+
+            <h2>भाग २: श्री बालाजींचे बालावणे आणि 'तिकीट' मिळवण्याची धडपड!</h2>
+            <p>गेल्या १२ वर्षांपासून बालाजींच्या दर्शनाची इच्छा आमच्या मनात होती. जेव्हा <strong>श्री बालाजींचे बालावणे</strong> आले, तेव्हा सगळं अचानक जुळून आले आणि हा संपूर्ण परिवार या पवित्र प्रवासासाठी सज्ज झाला.</p>
+            <p>तिरुपतीचे ३०० रुपयांचे 'स्पेशल एंट्री दर्शन' पास मिळवणे ही मोठी कसरत असते. लाखो लोकांच्या गर्दीत देवाच्या कृपेने आम्हा चौघांना पास मिळाले; पण सासू-सासऱ्यांकडे ऑनलाईन पास नव्हता. तरीही त्यांच्या अथांग श्रद्धेमुळे त्यांनी तिकीट नसतानाही साध्या दर्शनाच्या (SSD Tokens) रांगेतून जाण्याचे ठरवले. त्यांची ही भक्ती खरोखरच प्रेरणादायी होती.</p>
+
+            <div class="tip-box">
+                तिरुपती देवस्थानमच्या (TTD) वेबसाईटवर ऑनलाईन पास मिळतात. ऑनलाईन पास न मिळाल्यास तिरुपतीमधील 'श्रीनिवासम कॉम्प्लेक्स'मध्ये ऑफलाईन SSD टोकन्स दिले जातात. यासाठी प्रत्येकाचे मूळ आधार कार्ड अनिवार्य आहे.
+            </div>
+
+            <h2>भाग ३: चेन्नईत अवतरण आणि मध्यरात्रीचा 'झोमॅटो' अनुभव!</h2>
+            <p>आमचा इंडिगो प्रवास अतिशय सुखद झाला. चेन्नईत उतरल्यानंतर कॅब करून थेट <strong>'हॉटेल ग्रीन्स वेन्यू'</strong> गाठले. रेल्वे स्टेशन जवळ असल्यामुळे हा परिसर प्रवासासाठी अतिशय सोयीचा ठरला.</p>
+            <p>रात्री उशिरा पोहोचल्यामुळे हॉटेलमध्ये जेवणाची सोय नव्हती. अनुने झोमॅटोवरून <strong>'डुंडिमाल रेस्टॉरंट'</strong> मधून जेवण मागवले. डिलिव्हरी बॉयने पत्ता चुकला असतानाही उत्तम सेवा देत रात्री १२ वाजता अवघ्या ८० रुपये डिलिव्हरी चार्जेसमध्ये गरम जेवण पोहोचवले! भरपेट जेवून रात्री दीडच्या सुमारास आम्ही गाढ झोपलो.</p>
+
+            <div class="tip-box">
+                वंदे भारत एक्सप्रेस किंवा सकाळी लवकर ट्रेन पकडायची असल्यास चेन्नई सेंट्रल रेल्वे स्टेशनजवळ हॉटेल बुक करणे नेहमी सोयीचे ठरते.
+            </div>
+
+            <h2>भाग ४: फोर्ट म्युझियमचा इतिहास आणि केळीच्या पानावर अस्सल जेवण!</h2>
+            <p>सकाळी मंदिरांची वेळ चुकल्यामुळे आम्ही थेट <strong>'फोर्ट म्युझियम' (Fort St. George)</strong> ला भेट दिली, जिथे ब्रिटनच्या काळातील जुन्या वस्तू आणि इतिहास पाहिला. नंतर २०१४ च्या आठवणी जागवत आम्ही <strong>'अमरावती रेस्टॉरंट'</strong> मध्ये गेलो, जिथे ताज्या केळीच्या पानावर अस्सल दक्षिण भारतीय जेवण आणि पहिल्यांदाच <strong>'गोली सोडा'</strong> पिण्याचा आनंद घेतला!</p>
+
+            <h2>भाग ५: मरिना बीचवर रिक्षाची ताटातूट, २० मिनिटांची चाल आणि लाटांसोबत धम्माल!</h2>
+            <p>संध्याकाळी मरिना बीचवर अनु आणि सासूबाई लाईट हाऊसजवळ गेल्या, तर मी आणि आर्यन फ्ली मार्केट पाहत करुणानिधी स्मारकान्याजवळ थांबलो. मी फोनवर अनुचे लाईव्ह लोकेशन पाहिले आणि आर्यनचा हात धरून अंधारात जवळपास २० मिनिटे वाळूतून चालत जाऊन आम्ही कुटुंबीयांना गाठले!</p>
+            <p>अद्विका आजोबा-आजीसोबत खेळणी पाहत रमली, तर मी आणि आर्यन थेट लाटांमध्ये उतरलो. आर्यन पूर्ण भिजला (आणि नेहमीप्रमाणे आम्ही जादाचे कपडे न्यायला विसरलो होतो!). रात्री अमरावती रेस्टॉरंटमध्ये जेवण करून आम्ही हॉटेलवर परतलो.</p>
+
+            <div class="tip-box">
+                मरिना बीच ६ किलोमीटरहून अधिक लांब आहे. कुटुंबीय वेगवेगळ्या वाहनांनी गेल्यास अंधारात भेटण्यासाठी WhatsApp वर लाईव्ह लोकेशन शेअर करणे सर्वात उत्तम उपाय आहे.
+            </div>
+
+            <h2>भाग ६: तावेरा सफर, डायनासोर सरप्राइज आणि महाबलीपुरमची जिवंत शिल्पकला!</h2>
+            <p>दुसऱ्या दिवशी सकाळी आम्ही ₹४,५०० भाड्याने <strong>'शेवरलेट तावेरा'</strong> करून महाबलीपुरमसाठी निघालो. वाटेत <strong>'आनंद भवन'</strong> मध्ये नाश्ता केला. म्युझियममध्ये लहानग्या अद्विकाला डायनासोरची नावे माहीत असलेली पाहून आश्चर्य वाटले!</p>
+            <p>पुढे पुरातत्व स्थळांकडे जाताना रस्त्याकडे दगड कोरून शिल्पे बनवणारे अनेक कलाकार दिसले. ते पाहून जाणीव झाली की हे शिल्पकार नक्कीच त्या प्राचीन शिल्पकारांचे <strong>'वंशज' (Vanshaj)</strong> आहेत, ज्यांनी शतकानुशतकांपूर्वी ही मंदिरे कोरली होती. महाबलीपुरमचे रथ, शोर मंदिर आणि बटर बॉल पाहून आम्ही ड्रायव्हरने सुचवलेल्या हॉटेलमध्ये मस्त <strong>फिश लंच</strong>चा आस्वाद घेतला.</p>
+
+            <h2>भाग ७: मयलापूर खरेदी आणि मरिना बीचवरील पोलिस व्हिसल!</h2>
+            <p>चेन्नईत परतल्यावर अनु आणि सासूबाईंनी <strong>'मयलापूर मार्केट'</strong> मध्ये खरेदी केली. मयलापूरहून परतताना आर्यनच्या हट्टाखातर आम्ही मरिना बीचवर गेलो. आर्यन पाण्यातून बाहेर यायला तयारच नव्हता! शेवटी दोन पोलीस काकांनी व्हिसल वाजवताच त्या जरबेने आर्यन पळत बाहेर आला!</p>
+
+            <h2>भाग ८: वंदे भारत ट्रेनला उशीर आणि देवाचे एक 'वरदान'!</h2>
+            <p>पहाटे ५:३० ची ट्रेन पकडणे कठीण होते, त्यात अद्विकाची प्रकृती थोडी बिघडली होती. पण देवाच्या कृपेने चेन्नई ते रेनिगुंटा जाणारी <strong>वंदे भारत एक्सप्रेस</strong> दीड तास उशिरा असल्याचा मेसेज आला! आम्ही <strong>चेन्नई सेंट्रल रेल्वे स्टेशन</strong> गाठले—जे अत्यंत स्वच्छ, आधुनिक आणि एसी लाऊंज असलेले अप्रतिम स्टेशन होते.</p>
+
+            <h2>भाग ९: माधव कॉम्प्लेक्स मुक्काम आणि श्रीनिवासमचा अनुभव!</h2>
+            <p>रेनिगुंटाला पोहोचून आम्ही <strong>'माधव कॉम्प्लेक्स'</strong> मधील प्रशस्त रूममध्ये राहिलो. शेजारीच असलेल्या <strong>'श्रीनिवासम मंडपम'</strong> मध्ये राहण्याची आणि जेवणाची उत्तम सोय असते. सासू-सासऱ्यांकडे ऑनलाईन पास नसल्यामुळे ते त्याच दिवशी बसने तिरुमलाला दर्शनासाठी निघून गेले आणि १२ तासांत दर्शन घेऊन सुरक्षित परतले! दरम्यान, मी आणि अनुने श्रीनिवासममध्ये महाप्रसाद घेतला; बालाजींच्या कृपेने अनुसाठी एक ताट राखून ठेवले होते.</p>
+
+            <h2>भाग १०: तिरुमला प्रवास आणि ३ तासांची दर्शनाची रांग!</h2>
+            <p>दुसऱ्या दिवशी टॅक्सीने घाटावर वर जाऊन आम्ही <strong>₹३०० च्या विशेष दर्शन</strong> रांगेत प्रवेश केला (बाहेरच्या दुकानातून पासची हार्ड कॉपी प्रिंट करून!). साडेतीन तास रांगेत चालून आणि प्रतीक्षा कक्षात वेळ घालवून, जब आम्ही गाभाऱ्यात प्रवेश केला आणि *"वेंकटरामण गोविंदा"* म्हणत प्रत्यक्ष श्री बालाजींचे दर्शन घेतले, तेव्हा सारे श्रम विसरून मन भारावून गेले. अनुराधाच्या डोळ्यात आनंदाचे अश्रू आले. प्रसादाचे लाडू घेऊन आम्ही खाली परतलो.</p>
+
+            <h2>भाग ११: श्रीनिवासम विश्रांती आणि मंदिरांचे दिव्य दर्शन!</h2>
+            <p>तिसरा दिवस श्रीनिवासममध्ये विश्रांती घेऊन (तिथे चादरी आणि ब्लँकेट्स मिळतात) आम्ही दोन प्रसिद्ध मंदिरांना भेट दिली:<br>
+            १. <strong>श्री पद्मावती अम्मावारी मंदिर (तिरचनूर)</strong><br>
+            २. <strong>श्री गोविंदराज स्वामी मंदिर (तिरुपती - बालाजींचे थोरले बंधू)</strong></p>
+
+            <h2>भाग १२: कोल्हापूर मार्गे घरवापसी!</h2>
+            <p>'लातूरकर रेस्टॉरंट' मध्ये जेवण करून आम्ही <strong>हरिप्रिया एक्सप्रेस</strong> पकडली आणि कोल्हापुरात येऊन <strong>श्री महालक्ष्मी (अंबाबाई) मंदिराचे</strong> दर्शन घेतले. तिथून दुसऱ्या दिवशी वंदे भारत एक्सप्रेसने आम्ही पुण्यात परतलो.</p>
+            <p>विमानतळाच्या ड्रामापासून ते मरिना बीचच्या लाटा, महाबलीपुरमची शिल्पकला, तिरुपतीचे दिव्य दर्शन आणि कोल्हापूरच्या अंबाबाईच्या आशीर्वादापर्यंत—आमचा हा प्रवास अतिशय पवित्र, आनंददायी आणि आयुष्यभर लक्षात राहणारा ठरला!</p>
+        </div>
+
+        <div class="notepad-footer">
+            ~ A Journey Crafted with Faith & Love ~
+        </div>
+    </div>
+
+    <script>
+        let isEnglish = true;
+
+        function toggleLanguage() {
+            const enContent = document.getElementById('content-en');
+            const mrContent = document.getElementById('content-mr');
+            const btn = document.getElementById('langToggleBtn');
+
+            if (isEnglish) {
+                enContent.style.display = 'none';
+                mrContent.style.display = 'block';
+                btn.textContent = 'Read in English';
+                isEnglish = false;
+            } else {
+                enContent.style.display = 'block';
+                mrContent.style.display = 'none';
+                btn.textContent = 'मराठी मध्ये वाचा';
+                isEnglish = true;
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
